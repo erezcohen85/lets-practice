@@ -1,0 +1,21 @@
+/* The pulse of the unfilled ticks on the Processing board ("beat"): a soft double beat, then rest. The ticks use it only
+   under motion-safe (see ProgressRing.tsx), so it never runs for a visitor who prefers reduced motion. */
+@keyframes ring-beat {
+  0%,
+  60%,
+  100% {
+    opacity: 0.25;
+  }
+  8% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0.4;
+  }
+  24% {
+    opacity: 0.9;
+  }
+  36% {
+    opacity: 0.25;
+  }
+}

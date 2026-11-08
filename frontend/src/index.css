@@ -1,0 +1,152 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/dm-sans";
+@import "./design/tokens.css";
+
+/* Dark is the default theme (:root in tokens.css); light applies under [data-theme="light"].
+   shadcn's dark: variants follow the same rule instead of a .dark class. */
+@custom-variant dark (&:not(:where([data-theme="light"], [data-theme="light"] *)));
+
+@theme inline {
+    --font-heading: var(--font-sans);
+    --font-sans: var(--lp-font-sans);
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+
+    /* App roles as Tailwind colours (bg-surface-2, text-text-soft, border-loop, ...). */
+    --color-surface: var(--lp-surface);
+    --color-surface-2: var(--lp-surface-2);
+    --color-surface-3: var(--lp-surface-3);
+    --color-text-soft: var(--lp-text-soft);
+    --color-loop: var(--lp-loop);
+    --color-loop-tint: var(--lp-loop-tint);
+    --color-loop-handle: var(--lp-loop-handle);
+    --color-selected: var(--lp-selected);
+    --color-anchor: var(--lp-anchor);
+    --color-problem: var(--lp-problem);
+    --color-moved: var(--lp-moved);
+    --color-paper: var(--lp-paper);
+    --color-ink: var(--lp-ink);
+    --color-paper-cursor: var(--lp-paper-cursor);
+    --color-paper-anchor: var(--lp-paper-anchor);
+    --color-paper-selected: var(--lp-paper-selected);
+    --color-paper-moved: var(--lp-paper-moved);
+    --color-aurora-1: var(--lp-aurora-1);
+    --color-aurora-2: var(--lp-aurora-2);
+    --color-aurora-3: var(--lp-aurora-3);
+    --color-aurora-4: var(--lp-aurora-4);
+    --color-wave-low: var(--lp-wave-low);
+    --color-wave-mid: var(--lp-wave-mid);
+    --color-wave-high: var(--lp-wave-high);
+
+    /* The rest of the colour roles of design/tokens.ts, so no screen needs to touch this file. */
+    --color-border-strong: var(--lp-border-strong);
+    --color-text-muted: var(--lp-text-muted);
+    --color-on-primary: var(--lp-on-primary);
+    --color-primary-strong: var(--lp-primary-strong);
+    --color-edit: var(--lp-edit);
+    --color-on-edit: var(--lp-on-edit);
+    --color-on-share: var(--lp-on-share);
+    --color-on-anchor: var(--lp-on-anchor);
+    --color-loop-soft: var(--lp-loop-soft);
+    --color-selected-chip-bg: var(--lp-selected-chip-bg);
+    --color-selected-chip-text: var(--lp-selected-chip-text);
+    --color-problem-bg: var(--lp-problem-bg);
+    --color-problem-border: var(--lp-problem-border);
+    --color-danger: var(--lp-danger);
+    --color-on-danger: var(--lp-on-danger);
+    --color-danger-bright: var(--lp-danger-bright);
+    --color-share: var(--lp-share);
+    --color-moved-bg: var(--lp-moved-bg);
+    --color-moved-text: var(--lp-moved-text);
+    --color-warning-bg: var(--lp-warning-bg);
+    --color-warning-border: var(--lp-warning-border);
+    --color-warning-text: var(--lp-warning-text);
+    --color-warning-text-soft: var(--lp-warning-text-soft);
+    --color-flag-crowded-bg: var(--lp-flag-crowded-bg);
+    --color-flag-crowded-text: var(--lp-flag-crowded-text);
+    --color-flag-beat-count-bg: var(--lp-flag-beat-count-bg);
+    --color-flag-beat-count-text: var(--lp-flag-beat-count-text);
+    --color-flag-weak-downbeat-bg: var(--lp-flag-weak-downbeat-bg);
+    --color-flag-weak-downbeat-text: var(--lp-flag-weak-downbeat-text);
+    --color-flag-stretched-bg: var(--lp-flag-stretched-bg);
+    --color-flag-stretched-text: var(--lp-flag-stretched-text);
+
+    /* Radii of the boards: rounded-lg is 12 px (buttons, rows), rounded-card is 16 px (cards). */
+    --radius-card: var(--lp-radius-lg);
+}
+
+/* shadcn/ui's variable names, defined only as references to the --lp-* tokens. */
+:root {
+    --background: var(--lp-background);
+    --foreground: var(--lp-text);
+    --card: var(--lp-surface);
+    --card-foreground: var(--lp-text);
+    --popover: var(--lp-surface-2);
+    --popover-foreground: var(--lp-text);
+    --primary: var(--lp-primary);
+    --primary-foreground: var(--lp-on-primary);
+    --secondary: var(--lp-surface-2);
+    --secondary-foreground: var(--lp-text);
+    --muted: var(--lp-surface-2);
+    --muted-foreground: var(--lp-text-muted);
+    --accent: var(--lp-surface-3);
+    --accent-foreground: var(--lp-text);
+    --destructive: var(--lp-problem);
+    --border: var(--lp-border);
+    --input: var(--lp-border-strong);
+    --ring: var(--lp-primary-strong);
+    --radius: var(--lp-radius-md);
+    --sidebar: var(--lp-surface);
+    --sidebar-foreground: var(--lp-text);
+    --sidebar-primary: var(--lp-primary);
+    --sidebar-primary-foreground: var(--lp-on-primary);
+    --sidebar-accent: var(--lp-surface-3);
+    --sidebar-accent-foreground: var(--lp-text);
+    --sidebar-border: var(--lp-border);
+    --sidebar-ring: var(--lp-primary-strong);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground font-sans;
+    }
+  html {
+    @apply font-sans;
+    }
+}

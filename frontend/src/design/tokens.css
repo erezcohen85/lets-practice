@@ -1,0 +1,200 @@
+/* GENERATED FILE. Do not edit by hand.
+ * Source: src/design/tokens.ts. Regenerate with `npm run tokens` (run from frontend/). */
+
+:root {
+  /* Colour roles (dark, the default theme) */
+  --lp-background: #0A1220;
+  --lp-surface: #111B2E;
+  --lp-surface-2: #172338;
+  --lp-surface-3: #1B2840;
+  --lp-border: #24324A;
+  --lp-border-strong: #2B3B57;
+  --lp-text: #E8EEF8;
+  --lp-text-soft: #B5C2D6;
+  --lp-text-muted: #8FA0BA;
+  --lp-primary: #5EEAD4;
+  --lp-on-primary: #05201C;
+  --lp-primary-strong: #5EEAD4;
+  --lp-edit: #A78BFA;
+  --lp-on-edit: #0A1220;
+  --lp-loop: #A78BFA;
+  --lp-loop-soft: #C4B5FD;
+  --lp-loop-tint: rgba(167,139,250,0.18);
+  --lp-loop-handle: #8B5CF6;
+  --lp-selected: #FBBF24;
+  --lp-selected-chip-bg: #3A2E0E;
+  --lp-selected-chip-text: #FDE68A;
+  --lp-anchor: #34D399;
+  --lp-on-anchor: #05201C;
+  --lp-problem: #FDA4AF;
+  --lp-problem-bg: #3A1A22;
+  --lp-problem-border: #5B2B38;
+  --lp-danger: #E11D48;
+  --lp-on-danger: #FFFFFF;
+  --lp-danger-bright: #F43F5E;
+  --lp-share: #F9A8D4;
+  --lp-on-share: #0A1220;
+  --lp-moved: #5EEAD4;
+  --lp-moved-bg: #0F3A36;
+  --lp-moved-text: #99F6E4;
+  --lp-warning-bg: #2A2310;
+  --lp-warning-border: #5C4A12;
+  --lp-warning-text: #FDE68A;
+  --lp-warning-text-soft: #D9C58A;
+  --lp-paper: #FAFAF7;
+  --lp-ink: #1A1A1A;
+  --lp-paper-cursor: #14B8A6;
+  --lp-paper-anchor: #059669;
+  --lp-paper-selected: #D97706;
+  --lp-paper-moved: #0D9488;
+
+  /* Review Queue flag chips (dark) */
+  --lp-flag-crowded-bg: #3A1A22;
+  --lp-flag-crowded-text: #FDA4AF;
+  --lp-flag-beat-count-bg: #231B3D;
+  --lp-flag-beat-count-text: #C4B5FD;
+  --lp-flag-weak-downbeat-bg: #173347;
+  --lp-flag-weak-downbeat-text: #7DD3FC;
+  --lp-flag-stretched-bg: #3A2E0E;
+  --lp-flag-stretched-text: #FDE68A;
+
+  /* Waveform */
+  --lp-wave-low: #5EEAD4;
+  --lp-wave-mid: #A78BFA;
+  --lp-wave-high: #F9A8D4;
+  --lp-wave-unplayed-opacity: 0.4;
+
+  /* Glow of the big coloured buttons */
+  --lp-glow-alpha: 25%;
+  --lp-glow-alpha-hover: 38%;
+  --lp-glow-reach: 40px;
+
+  /* Cursor colours (the choices for the bar box and the gliding line) */
+  --lp-cursor-teal: #14B8A6;
+  --lp-cursor-amber: #FBBF24;
+  --lp-cursor-pink: #F9A8D4;
+  --lp-cursor-blue: #3B82F6;
+
+  /* Aurora (brand moments only) */
+  --lp-aurora-1: #5EEAD4;
+  --lp-aurora-2: #34D399;
+  --lp-aurora-3: #8B5CF6;
+  --lp-aurora-4: #D946EF;
+
+  /* Font family */
+  --lp-font-sans: "DM Sans Variable", "DM Sans", system-ui, sans-serif;
+
+  /* Type scale */
+  --lp-text-xs: 12px;
+  --lp-text-sm: 14px;
+  --lp-text-base: 16px;
+  --lp-text-lg: 18px;
+  --lp-text-xl: 20px;
+  --lp-text-2xl: 28px;
+  --lp-text-3xl: 36px;
+  --lp-text-4xl: 56px;
+
+  /* Radius */
+  --lp-radius-sm: 8px;
+  --lp-radius-md: 12px;
+  --lp-radius-lg: 16px;
+  --lp-radius-pill: 9999px;
+
+  /* Spacing (4px base) */
+  --lp-space-1: 4px;
+  --lp-space-2: 8px;
+  --lp-space-3: 12px;
+  --lp-space-4: 16px;
+  --lp-space-5: 20px;
+  --lp-space-6: 24px;
+  --lp-space-8: 32px;
+  --lp-space-10: 40px;
+  --lp-space-12: 48px;
+  --lp-space-16: 64px;
+
+  /* Touch targets */
+  --lp-touch-ipad: 44px;
+  --lp-touch-desktop: 36px;
+
+  /* Motion */
+  --lp-motion-fast: 120ms;
+  --lp-motion-base: 200ms;
+  --lp-motion-slow: 320ms;
+  --lp-motion-easing: cubic-bezier(0.2, 0, 0, 1);
+}
+
+[data-theme="light"] {
+  /* Colour roles (light, approved 2026-11-06) */
+  --lp-background: #F6F8FC;
+  --lp-surface: #FFFFFF;
+  --lp-surface-2: #EEF2F8;
+  --lp-surface-3: #E2E8F2;
+  --lp-border: #D5DEEC;
+  --lp-border-strong: #B5C2D6;
+  --lp-text: #0A1220;
+  --lp-text-soft: #2B3B57;
+  --lp-text-muted: #5B6B85;
+  --lp-primary: #79E0D2;
+  --lp-on-primary: #0A1220;
+  --lp-primary-strong: #0F766E;
+  --lp-edit: #BDAAF7;
+  --lp-on-edit: #0A1220;
+  --lp-loop: #7C3AED;
+  --lp-loop-soft: #6D28D9;
+  --lp-loop-tint: rgba(124,58,237,0.14);
+  --lp-loop-handle: #7C3AED;
+  --lp-selected: #B45309;
+  --lp-selected-chip-bg: #FEF3C7;
+  --lp-selected-chip-text: #78350F;
+  --lp-anchor: #047857;
+  --lp-on-anchor: #FFFFFF;
+  --lp-problem: #E11D48;
+  --lp-problem-bg: #FFE4E6;
+  --lp-problem-border: #FECDD3;
+  --lp-danger: #E11D48;
+  --lp-on-danger: #FFFFFF;
+  --lp-danger-bright: #F43F5E;
+  --lp-share: #F7B4D6;
+  --lp-on-share: #0A1220;
+  --lp-moved: #0D9488;
+  --lp-moved-bg: #CCFBF1;
+  --lp-moved-text: #115E59;
+  --lp-warning-bg: #FEF3C7;
+  --lp-warning-border: #FCD34D;
+  --lp-warning-text: #78350F;
+  --lp-warning-text-soft: #92400E;
+  --lp-paper: #FAFAF7;
+  --lp-ink: #1A1A1A;
+  --lp-paper-cursor: #14B8A6;
+  --lp-paper-anchor: #059669;
+  --lp-paper-selected: #D97706;
+  --lp-paper-moved: #0D9488;
+
+  /* Review Queue flag chips (light, approved 2026-11-06) */
+  --lp-flag-crowded-bg: #FFE4E6;
+  --lp-flag-crowded-text: #BE123C;
+  --lp-flag-beat-count-bg: #EDE9FE;
+  --lp-flag-beat-count-text: #6D28D9;
+  --lp-flag-weak-downbeat-bg: #E0F2FE;
+  --lp-flag-weak-downbeat-text: #0369A1;
+  --lp-flag-stretched-bg: #FEF3C7;
+  --lp-flag-stretched-text: #92400E;
+
+  /* Waveform (light, palette A1) */
+  --lp-wave-low: #2B9E90;
+  --lp-wave-mid: #8A6FE8;
+  --lp-wave-high: #DB5F9F;
+
+  /* Glow of the big coloured buttons (light, palette A1) */
+  --lp-glow-alpha: 70%;
+  --lp-glow-alpha-hover: 85%;
+  --lp-glow-reach: 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --lp-motion-fast: 0ms;
+    --lp-motion-base: 0ms;
+    --lp-motion-slow: 0ms;
+  }
+}

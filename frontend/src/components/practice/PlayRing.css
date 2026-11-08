@@ -1,0 +1,12 @@
+/* One beat of the count-in, seen in the play ring: the ticks swell a little and flare, then settle. The ring uses it only
+   under motion-safe (see PlayRing.tsx), so it never runs for a visitor who prefers reduced motion. */
+@keyframes play-ring-pulse {
+  0% {
+    transform: scale(1.1);
+    filter: brightness(3);
+  }
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}

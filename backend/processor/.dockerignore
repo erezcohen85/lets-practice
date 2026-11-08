@@ -1,0 +1,18 @@
+# Build context is backend/processor/. Keep secrets, local environments and test material out of it.
+
+# Secrets and local environment: only the names-only example may enter the context.
+.env
+.env.*
+!.env.example
+
+# Local Python environments and caches (the image builds its own with uv)
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+
+# Not needed at runtime (spikes and eval outputs are local work; tests run before the image build)
+tests/
+spikes/
+eval/

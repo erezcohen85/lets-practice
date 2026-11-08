@@ -1,0 +1,89 @@
+{
+ "part_name": "Clarinet in B♭ 1",
+ "lines": [
+  {
+   "page": 1,
+   "printed_start_number": null,
+   "measures": [
+    {
+     "multi_rest_bars": 1,
+     "time_signature": "4/4",
+     "fermata_beats": [],
+     "text": [
+      "Joyous!"
+     ],
+     "repeat": "none",
+     "volta": null,
+     "navigation": null
+    },
+    {
+     "multi_rest_bars": 1,
+     "time_signature": null,
+     "fermata_beats": [],
+     "text": [],
+     "repeat": "none",
+     "volta": null,
+     "navigation": null
+    },
+    {
+     "multi_rest_bars": 1,
+     "time_signature": null,
+     "fermata_beats": [],
+     "text": [],
+     "repeat": "none",
+     "volta": null,
+     "navigation": null
+    },
+    {
+     "multi_rest_bars": 1,
+     "time_signature": null,
+     "fermata_beats": [
+      1
+     ],
+     "text": [],
+     "repeat": "none",
+     "volta": null,
+     "navigation": null
+    }
+   ]
+  },
+  {
+   "page": 1,
+   "printed_start_number": 5,
+   "measures": [
+    {
+     "multi_rest_bars": 2,
+     "time_signature": null,
+     "fermata_beats": [],
+     "text": [],
+     "repeat": "none",
+     "volta": null,
+     "navigation": null
+    },
+    {
+     "multi_rest_bars": 1,
+     "time_signature": null,
+     "fermata_beats": [],
+     "text": [
+      "rall."
+     ],
+     "repeat": "none",
+     "volta": null,
+     "navigation": null
+    },
+    {
+     "multi_rest_bars": 1,
+     "time_signature": null,
+     "fermata_beats": [],
+     "text": [],
+     "repeat": "end",
+     "volta": null,
+     "navigation": null
+    }
+   ]
+  }
+ ],
+ "doubts": [
+  "line 2: the rest may be a 3-bar rest"
+ ]
+}

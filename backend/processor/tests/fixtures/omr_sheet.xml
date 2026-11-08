@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Hand-made imitation of the sheet#1.xml that Audiveris stores in a .omr project file
+  (JAXB class Sheet; see repos/audiveris/schemas). It models only what the parser reads:
+    sheet > picture@width,@height
+    sheet > page > system > stack@id,@left,@right,@repeat   (one stack per measure; repeat is a list of LEFT / RIGHT)
+    system > part > staff > lines > line > point@x,@y        (staff lines give the system top and bottom)
+    system > part > measure@id (= stack id) > times          (IDREFs into the system's sig)
+    system > sig > inters > time-whole | time-pair | time-custom @id,@shape,@time-rational
+  Audiveris writes much more (barlines, notes, clefs, keys, glyphs ...); none of that is needed here.
+  Layout at 2000 x 2800 px: two systems of four measures, 4/4 printed on bar 1, 3/4 on bar 7,
+  a back-to-back repeat between bar 4 (:|) and bar 5 (|:).
+-->
+<sheet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" last-persistent-id="31">
+  <picture width="2000" height="2800"/>
+  <skew slope="0.00012"/>
+  <page id="1" measure-count="8">
+    <system id="1" indented="1">
+      <stack id="1" left="150" right="550"/>
+      <stack id="2" left="550" right="950"/>
+      <stack id="3" left="950" right="1350"/>
+      <stack id="4" left="1350" right="1850" repeat="RIGHT"/>
+      <part id="1">
+        <staff id="1" left="150" right="1850">
+          <lines>
+            <line thickness="4.0">
+              <point x="150.0" y="400.0"/>
+              <point x="1850.0" y="400.0"/>
+            </line>
+            <line thickness="4.0">
+              <point x="150.0" y="440.0"/>
+              <point x="1850.0" y="440.0"/>
+            </line>
+            <line thickness="4.0">
+              <point x="150.0" y="480.0"/>
+              <point x="1850.0" y="480.0"/>
+            </line>
+            <line thickness="4.0">
+              <point x="150.0" y="520.0"/>
+              <point x="1850.0" y="520.0"/>
+            </line>
+            <line thickness="4.0">
+              <point x="150.0" y="560.0"/>
+              <point x="1850.0" y="560.0"/>
+            </line>
+          </lines>
+        </staff>
+        <measure id="1">
+          <times>21</times>
+        </measure>
+        <measure id="2"/>
+        <measure id="3"/>
+        <measure id="4"/>
+      </part>
+      <sig>
+        <inters>
+          <time-whole id="21" shape="TIME_FOUR_FOUR" time-rational="4/4" grade="0.991"/>
+        </inters>
+      </sig>
+    </system>
+    <system id="2">
+      <stack id="5" left="150" right="600" repeat="LEFT"/>
+      <stack id="6" left="600" right="1000"/>
+      <stack id="7" left="1000" right="1400"/>
+      <stack id="8" left="1400" right="1850"/>
+      <part id="2">
+        <staff id="2" left="150" right="1850">
+          <lines>
+            <line thickness="4.0">
+              <point x="150.0" y="1000.0"/>
+              <point x="1850.0" y="1000.0"/>
+            </line>
+            <line thickness="4.0">
+              <point x="150.0" y="1040.0"/>
+              <point x="1850.0" y="1040.0"/>
+            </line>
+            <line thickness="4.0">
+              <point x="150.0" y="1080.0"/>
+              <point x="1850.0" y="1080.0"/>
+            </line>
+            <line thickness="4.0">
+              <point x="150.0" y="1120.0"/>
+              <point x="1850.0" y="1120.0"/>
+            </line>
+            <line thickness="4.0">
+              <point x="150.0" y="1160.0"/>
+              <point x="1850.0" y="1160.0"/>
+            </line>
+          </lines>
+        </staff>
+        <measure id="5"/>
+        <measure id="6"/>
+        <measure id="7">
+          <times>30</times>
+        </measure>
+        <measure id="8"/>
+      </part>
+      <sig>
+        <inters>
+          <time-whole id="30" shape="TIME_THREE_FOUR" time-rational="3/4" grade="0.978"/>
+        </inters>
+      </sig>
+    </system>
+  </page>
+</sheet>

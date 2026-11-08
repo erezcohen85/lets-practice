@@ -1,0 +1,50 @@
+{
+ "part_name": null,
+ "lines": [
+  {
+   "page": 1,
+   "printed_start_number": 5,
+   "measures": [
+    {
+     "multi_rest_bars": 2,
+     "time_signature": null,
+     "fermata_beats": [],
+     "text": [],
+     "repeat": "none",
+     "volta": null,
+     "navigation": null
+    },
+    {
+     "multi_rest_bars": 1,
+     "time_signature": null,
+     "fermata_beats": [],
+     "text": [
+      "rall."
+     ],
+     "repeat": "none",
+     "volta": null,
+     "navigation": null
+    },
+    {
+     "multi_rest_bars": 1,
+     "time_signature": null,
+     "fermata_beats": [],
+     "text": [],
+     "repeat": "none",
+     "volta": null,
+     "navigation": null
+    },
+    {
+     "multi_rest_bars": 1,
+     "time_signature": null,
+     "fermata_beats": [],
+     "text": [],
+     "repeat": "end",
+     "volta": null,
+     "navigation": null
+    }
+   ]
+  }
+ ],
+ "doubts": []
+}
